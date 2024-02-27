@@ -24,7 +24,8 @@ public class SetTask {
         //checking if sets have elements in common
         Set<String> disjont = new HashSet<>(firstSet);
         disjont.retainAll(secondSet);
-
+        
+        //printing results
         if (disjont.isEmpty()){
             System.out.println("\nDisjoint");
         } else{
