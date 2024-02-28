@@ -20,8 +20,8 @@ public class SetTask {
      System.out.println("\nSet: " + integersSet);
 
      //removing all elements
-     integersSet.removeAll(integersSet); //or use .clear()
-
+     integersSet.removeAll(integersSet);
+  
      //printing out the set after removing all elements 
      System.out.println("\nSet after clear: " + integersSet);
  }
