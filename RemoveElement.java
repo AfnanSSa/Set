@@ -16,7 +16,7 @@ public class SetTask {
      //adding elements to the set
      integersSet.addAll(Arrays.asList(1, 2, 3, 4, 5, 6));
 
-     //printing th set
+     //printing the set
      System.out.println("\nSet: " + integersSet);
      
      //removing element '3' from the set
