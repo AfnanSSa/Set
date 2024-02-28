@@ -11,7 +11,7 @@ import java.util.HashSet;
 
 public class SetTask {
     public static void main(String[] args) {
-        //creating 3 sets
+        //creating sets
         Set<String> firstSet = new HashSet<>();
         Set<String> secondSet = new HashSet<>();
 
