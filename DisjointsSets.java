@@ -17,14 +17,16 @@ public class SetTask {
 
         //adding element the first set
         firstSet.addAll(Arrays.asList("Afnan", "Noura", "Tayba"));
+        System.out.println("\n" + firstSet);
 
         //adding elements to the second set
         secondSet.addAll(Arrays.asList("Balqees", "Shaimaa"));
+        System.out.println("\n" + secondSet);
 
         //checking if sets have elements in common
         Set<String> disjont = new HashSet<>(firstSet);
         disjont.retainAll(secondSet);
-        
+
         //printing results
         if (disjont.isEmpty()){
             System.out.println("\nDisjoint");
