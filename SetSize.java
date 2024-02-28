@@ -9,7 +9,7 @@ import java.util.HashSet;
 
 public class SetTask {
  public static void main(String[] args){
-     //creating set to store integers
+     //creating set
      Set<String> namesSet = new HashSet<>();
 
      //adding 5 elements to the set
