@@ -1,4 +1,4 @@
-/* Remove If
+/* Clone a HashSet
  * Objective: Learn to create a shallow copy of a HashSet.
  * Problem Statement: Given a HashSet<String>, create a shallow copy
  * of this set and then add a new element to the copy. Verify by printing
