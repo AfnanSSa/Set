@@ -9,7 +9,7 @@ import java.util.HashSet;
 
 public class SetTask {
  public static void main(String[] args){
-     //creating 3 sets
+     //creating sets
      Set<Integer> firstSet = new HashSet<>();
      Set<Integer> secondSet = new HashSet<>();
 
