@@ -14,7 +14,7 @@ import java.util.*;
 public class DuplicateNumbers {
     public static void main(String[] args) {
         //creating an array
-        int[] numArray = {1, 2, 3, 4, 5, 6, 7};
+        int[] numArray = {1, 2, 3, 4, 5, 6, 6, 7};
         //creating sets
         Set<Integer> numSet = new HashSet<>(); //a set to contain the array elements
         Set<Integer> duplicates = new HashSet<>(); //set to contain duplicated numbers
@@ -24,15 +24,15 @@ public class DuplicateNumbers {
             if (!numSet.add(number)) {
                 /*if number hasn't been added to the set it means it's duplicated,
                 so it will be added to duplicates set*/
-                duplicates.add(number);
+               duplicates.add(number);
             }
         }
 
-        if (!duplicates.isEmpty()){
-            //if duplicates set is not empty (contains duplicates)
+        if (numArray.length > numSet.size()){
+            //if array size is greater than numSet size
             System.out.println("\nDuplicated number(s): " + duplicates);
         } else {
-            //if duplicates set is empty (no duplicates)
+            //if array size is less than numSet size
             System.out.println("\nNo duplicates found!");
         }
     }
