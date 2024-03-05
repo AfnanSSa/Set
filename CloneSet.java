@@ -12,18 +12,18 @@ import java.util.Set;
 public class SetTask {
     public static void main(String[] args) {
         //creating a set
-        Set<String> nameSet = new HashSet<>();
+        Set<String> originalSet = new HashSet<>();
 
         //adding elements to set
-        nameSet.addAll(Arrays.asList("Afnan", "Tayba", "Noura", "Balqees"));
+        originalSet.addAll(Arrays.asList("Afnan", "Tayba", "Noura", "Balqees"));
 
         //creating a new set to contain the first set
-        Set<String> cloneSet = new HashSet<>(nameSet);
+        Set<String> cloneSet = new HashSet<>(originalSet);
         //adding element to the copied set
         cloneSet.add("Shaimaa");
 
         //printing out sets
-        System.out.println("\nOriginal set: " + nameSet);
+        System.out.println("\nOriginal set: " + originalSet);
         System.out.println("Cloned set: " + cloneSet);
     }
 }
