@@ -10,29 +10,21 @@
  * sneaks in with a duplicate invite number. Your job is to find out which number got copied.*/
 
 import java.util.*;
-
 public class DuplicateNumbers {
     public static void main(String[] args) {
         //creating an array
-        int[] numArray = {1, 2, 3, 4, 5, 6, 6, 7};
-        //creating sets
+        Integer[] numArray = {1, 2, 3, 4, 5, 6, 6, 7};
+        //creating set
         Set<Integer> numSet = new HashSet<>(); //a set to contain the array elements
-        Set<Integer> duplicates = new HashSet<>(); //set to contain duplicated numbers
 
-        //adding array elements to the set
-        for (int number : numArray) { //for each element in the array
-            if (!numSet.add(number)) {
-                /*if number hasn't been added to the set it means it's duplicated,
-                so it will be added to duplicates set*/
-               duplicates.add(number);
-            }
-        }
+        numSet.addAll(List.of(numArray)); //adding array element to the set 
 
         if (numArray.length > numSet.size()){
             //if array size is greater than numSet size
-            System.out.println("\nDuplicated number(s): " + duplicates);
-        } else {
-            //if array size is less than numSet size
+            System.out.println("\nThere are duplicated number(s)");
+
+        }else {
+            //if array size is less or equal than numSet size
             System.out.println("\nNo duplicates found!");
         }
     }
